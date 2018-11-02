@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style2.css"?>
+<?link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin-ext" rel="stylesheet"?>
+<!DOCTYPE strona SYSTEM "Skoczkowie.dtd">
+<strona tytuł="Wybitni skoczkowie">
+    <skoczkowie>
+            <skoczek narodowość="no1" indeks="1">
+                    <imie>Adam</imie>
+                    <nazwisko>Małysz</nazwisko>
+                    <dataUrodzenia>03.12.1977</dataUrodzenia>
+                    <miejsceUrodzenia>Wisła</miejsceUrodzenia>
+                    <wzrost jednostka="cm">170</wzrost>
+                    <waga jednostka="kg">54</waga>
+                    <kariera>
+                            <poczatek>1995</poczatek>
+                            <koniec>2011</koniec>
+                            <rekord jednostka="m">230.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no3" indeks="2">
+                    <imie>Janne</imie>
+                    <nazwisko>Ahonen</nazwisko>
+                    <dataUrodzenia>13.12.1977</dataUrodzenia>
+                    <miejsceUrodzenia>Lahti</miejsceUrodzenia>
+                    <wzrost jednostka="cm">184</wzrost>
+                    <waga jednostka="kg">66</waga>
+                    <kariera>
+                            <poczatek>1992</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">233.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no2" indeks="3">
+                    <imie>Anders</imie>
+                    <nazwisko>Bardal</nazwisko>
+                    <dataUrodzenia>24.08.1982</dataUrodzenia>
+                    <miejsceUrodzenia>Steinkjer</miejsceUrodzenia>
+                    <wzrost jednostka="cm">184</wzrost>
+                    <waga jednostka="kg">60</waga>
+                    <kariera>
+                            <poczatek>2001</poczatek>
+                            <koniec>2015</koniec>
+                            <rekord jednostka="m">227.0</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no6" indeks="4">
+                    <imie>Sven</imie>
+                    <nazwisko>Hannawald</nazwisko>
+                    <dataUrodzenia>09.11.1974</dataUrodzenia>
+                    <miejsceUrodzenia>Erlabrunn</miejsceUrodzenia>
+                    <wzrost jednostka="cm">184</wzrost>
+                    <waga jednostka="kg">64</waga>
+                    <kariera>
+                            <poczatek>1992</poczatek>
+                            <koniec>2005</koniec>
+                            <rekord jednostka="m">220.0</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no6" indeks="5">
+                    <imie>Martin</imie>
+                    <nazwisko>Schmitt</nazwisko>
+                    <dataUrodzenia>29.01.1978</dataUrodzenia>
+                    <miejsceUrodzenia>Villingen-Schwenningen</miejsceUrodzenia>
+                    <wzrost jednostka="cm">182</wzrost>
+                    <waga jednostka="kg">65</waga>
+                    <kariera>
+                            <poczatek>1997</poczatek>
+                            <koniec>2014</koniec>
+                            <rekord jednostka="m">224.0</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no1" indeks="6">
+                    <imie>Kamil</imie>
+                    <nazwisko>Stoch</nazwisko>
+                    <dataUrodzenia>15.05.1987</dataUrodzenia>
+                    <miejsceUrodzenia>Zakopane</miejsceUrodzenia>
+                    <wzrost jednostka="cm">173</wzrost>
+                    <waga jednostka="kg">55</waga>
+                    <kariera>
+                            <poczatek>2004</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">251.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no7" indeks="7">
+                    <imie>Simon</imie>
+                    <nazwisko>Ammann</nazwisko>
+                    <dataUrodzenia>25.06.1981</dataUrodzenia>
+                    <miejsceUrodzenia>Grabs</miejsceUrodzenia>
+                    <wzrost jednostka="cm">170</wzrost>
+                    <waga jednostka="kg">50</waga>
+                    <kariera>
+                            <poczatek>1997</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">239.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no3" indeks="8">
+                    <imie>Matti</imie>
+                    <nazwisko>Hautamäki</nazwisko>
+                    <dataUrodzenia>14.07.1981</dataUrodzenia>
+                    <miejsceUrodzenia>Oulu</miejsceUrodzenia>
+                    <wzrost jednostka="cm">177</wzrost>
+                    <waga jednostka="kg">64</waga>
+                    <kariera>
+                            <poczatek>1997</poczatek>
+                            <koniec>2012</koniec>
+                            <rekord jednostka="m">235.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no1" indeks="9">
+                    <imie>Piotr</imie>
+                    <nazwisko>Żyła</nazwisko>
+                    <dataUrodzenia>16.01.1987</dataUrodzenia>
+                    <miejsceUrodzenia>Cieszyn</miejsceUrodzenia>
+                    <wzrost jednostka="cm">176</wzrost>
+                    <waga jednostka="kg">59</waga>
+                    <kariera>
+                            <poczatek>2006</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">245.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no5" indeks="10">
+                    <imie>Noriaki</imie>
+                    <nazwisko>Kasai</nazwisko>
+                    <dataUrodzenia>06.06.1972</dataUrodzenia>
+                    <miejsceUrodzenia>Shimokawa</miejsceUrodzenia>
+                    <wzrost jednostka="cm">177</wzrost>
+                    <waga jednostka="kg">65</waga>
+                    <kariera>
+                            <poczatek>1988</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">241.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no1" indeks="11">
+                    <imie>Maciej</imie>
+                    <nazwisko>Kot</nazwisko>
+                    <dataUrodzenia>09.06.1991</dataUrodzenia>
+                    <miejsceUrodzenia>Limanowa</miejsceUrodzenia>
+                    <wzrost jednostka="cm">178</wzrost>
+                    <waga jednostka="kg">61</waga>
+                    <kariera>
+                            <poczatek>2007</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">244.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no2" indeks="12">
+                    <imie>Robert</imie>
+                    <nazwisko>Johansson</nazwisko>
+                    <dataUrodzenia>23.03.1990</dataUrodzenia>
+                    <miejsceUrodzenia>Lillehammer</miejsceUrodzenia>
+                    <wzrost jednostka="cm">182</wzrost>
+                    <waga jednostka="">b.d</waga>
+                    <kariera>
+                            <poczatek>2013</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">252.0</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no3" indeks="13">
+                    <imie>Matti</imie>
+                    <nazwisko>Nykänen</nazwisko>
+                    <dataUrodzenia>17.07.1963</dataUrodzenia>
+                    <miejsceUrodzenia>Jyväskylä</miejsceUrodzenia>
+                    <wzrost jednostka="cm">177</wzrost>
+                    <waga jednostka="">b.d</waga>
+                    <kariera>
+                            <poczatek>1981</poczatek>
+                            <koniec>1991</koniec>
+                            <rekord jednostka="m">191.0</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no2" indeks="14">
+                    <imie>Daniel-André</imie>
+                    <nazwisko>Tande</nazwisko>
+                    <dataUrodzenia>24.01.1994</dataUrodzenia>
+                    <miejsceUrodzenia>Narwik</miejsceUrodzenia>
+                    <wzrost jednostka="cm">182</wzrost>
+                    <waga jednostka="">b.d</waga>
+                    <kariera>
+                            <poczatek>2014</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">243.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no4" indeks="15">
+                    <imie>Gregor</imie>
+                    <nazwisko>Schlierenzauer</nazwisko>
+                    <dataUrodzenia>07.01.1990</dataUrodzenia>
+                    <miejsceUrodzenia>Rum</miejsceUrodzenia>
+                    <wzrost jednostka="cm">180</wzrost>
+                    <waga jednostka="kg">54</waga>
+                    <kariera>
+                            <poczatek>2006</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">243.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no4" indeks="16">
+                    <imie>Thomas</imie>
+                    <nazwisko>Morgenstern</nazwisko>
+                    <dataUrodzenia>30.10.1986</dataUrodzenia>
+                    <miejsceUrodzenia>Spittal an der Drau</miejsceUrodzenia>
+                    <wzrost jednostka="cm">180</wzrost>
+                    <waga jednostka="kg">65</waga>
+                    <kariera>
+                            <poczatek>2006</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">232.0</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no8" indeks="17">
+                    <imie>Robert</imie>
+                    <nazwisko>Kranjec</nazwisko>
+                    <dataUrodzenia>16.07.1981</dataUrodzenia>
+                    <miejsceUrodzenia>Lublana</miejsceUrodzenia>
+                    <wzrost jednostka="cm">174</wzrost>
+                    <waga jednostka="kg">60</waga>
+                    <kariera>
+                            <poczatek>1998</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">244.0</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no4" indeks="18">
+                    <imie>Stefan</imie>
+                    <nazwisko>Kraft</nazwisko>
+                    <dataUrodzenia>13.05.1993</dataUrodzenia>
+                    <miejsceUrodzenia>Schwarzach im Pongau</miejsceUrodzenia>
+                    <wzrost jednostka="cm">166</wzrost>
+                    <waga jednostka="kg">56</waga>
+                    <kariera>
+                            <poczatek>2012</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">253.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no6" indeks="19">
+                    <imie>Richard</imie>
+                    <nazwisko>Freitag</nazwisko>
+                    <dataUrodzenia>14.08.1991</dataUrodzenia>
+                    <miejsceUrodzenia>Erlabrunn</miejsceUrodzenia>
+                    <wzrost jednostka="cm">171</wzrost>
+                    <waga jednostka="kg">60</waga>
+                    <kariera>
+                            <poczatek>2009</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">243.0</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no8" indeks="20">
+                    <imie>Peter</imie>
+                    <nazwisko>Prevc</nazwisko>
+                    <dataUrodzenia>20.09.1992</dataUrodzenia>
+                    <miejsceUrodzenia>Kranj</miejsceUrodzenia>
+                    <wzrost jednostka="cm">182</wzrost>
+                    <waga jednostka="kg">62</waga>
+                    <kariera>
+                            <poczatek>2009</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">250.0</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no8" indeks="21">
+                    <imie>Domen</imie>
+                    <nazwisko>Prevc</nazwisko>
+                    <dataUrodzenia>04.06.1999</dataUrodzenia>
+                    <miejsceUrodzenia>Kranj</miejsceUrodzenia>
+                    <wzrost jednostka="cm">174</wzrost>
+                    <waga jednostka="kg">b.d</waga>
+                    <kariera>
+                            <poczatek>2015</poczatek>
+                            <koniec>-</koniec>
+                            <rekord jednostka="m">243.5</rekord>
+                    </kariera>
+            </skoczek>
+            <skoczek narodowość="no1" indeks="22">
+                    <imie>Robert</imie>
+                    <nazwisko>Mateja</nazwisko>
+                    <dataUrodzenia>05.10.1974</dataUrodzenia>
+                    <miejsceUrodzenia>Zakopane</miejsceUrodzenia>
+                    <wzrost jednostka="cm">180</wzrost>
+                    <waga jednostka="kg">63</waga>
+                    <kariera>
+                            <poczatek>1992</poczatek>
+                            <koniec>2007</koniec>
+                            <rekord jednostka="m">205.5</rekord>
+                    </kariera>
+            </skoczek>
+    </skoczkowie>
+    <kraje_pochodzenia>
+            <panstwo id="no1">Polska</panstwo>
+            <panstwo id="no2">Norwegia</panstwo>
+            <panstwo id="no3">Finlandia</panstwo>
+            <panstwo id="no4">Austria</panstwo>
+            <panstwo id="no5">Japonia</panstwo>
+            <panstwo id="no6">Niemcy</panstwo>
+            <panstwo id="no7">Szwajcaria</panstwo>
+            <panstwo id="no8">Słowenia</panstwo>
+    </kraje_pochodzenia>
+    <autorzy>
+            <autor>Paweł Białek</autor>
+            <autor>Łukasz Kostrzewa</autor>
+    </autorzy>
+</strona>

@@ -1,0 +1,241 @@
+strona:before {
+	!content: url("skoczek_obraz.jpg");
+    background-color: #f0ab00;
+    !display:block; 
+    font-size: 45pt;
+    text-align: center;
+    font-weight: bolder;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    content: attr(tytuł);
+    color: #002395;
+}
+
+
+strona {
+	font-family: 'Ubuntu', sans-serif;
+	width: 1200px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	margin-top: 70px;
+}
+
+skoczek:nth-child(4n+1) {
+    background: #f0ab00;
+	color: black;
+}
+
+skoczek:nth-child(4n+4) {
+    background: #f0ab00;
+	color: black;
+}
+
+skoczek:nth-child(4n+3) , skoczek:nth-child(4n+2){
+    background: #002395;
+	color: white;
+}
+
+skoczek {
+	padding: 15px;
+	border-radius: 30px;
+	display: inline-block;
+	width: 40%;
+	text-align:center;
+	font-size: 18px;
+	!border: 1px dotted grey;
+	margin: 5px;
+}
+
+!imie:before{
+	content: "Imie i nazwisko";
+}
+
+imie{
+	display: inline;
+	text-align: center;
+	!display: inline;
+}
+nazwisko{
+	display: inline;
+}
+
+imie, nazwisko{
+	font-size: 30px;
+}
+
+dataUrodzenia:before{
+	content: "Data urodzenia : ";
+}
+
+miejsceUrodzenia:before{
+	content: "Miejsce urodzenia : ";
+}
+
+wzrost:before{
+	content: "Wzrost : ";
+}
+
+wzrost:after{
+	content: attr(jednostka);
+}
+
+waga:before{
+	content: "Waga : "
+}
+
+waga:after{
+	content: attr(jednostka);
+}
+
+dataUrodzenia{
+	margin-top: 15px;
+}
+
+
+poczatek:before{
+	content: "Poczatek kariery : "
+}
+
+koniec:before{
+	content: "Koniec kariery : "
+}
+
+rekord:before{
+	content: "Rekord : "
+}
+
+rekord:after{
+	content: attr(jednostka);
+}
+
+dataUrodzenia, miejsceUrodzenia, wzrost, waga, poczatek, koniec, rekord{
+	display: block;
+	text-align: left;
+	!float: left;
+}
+
+skoczek:hover{
+	box-shadow: 5px 5px 35px -5px rgba(0,0,0,0.75);
+	cursor: pointer;
+}
+
+kraje_pochodzenia{
+	display: none;
+}
+
+skoczek:after{
+	display: block;
+	text-align: left;
+}
+
+skoczek[narodowość="no1"]:after{
+	content: "Kraj pochodzenia : Polska";
+}
+
+skoczek[narodowość="no1"]:hover{
+	background-image: url(Polska.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #000000;
+}
+
+skoczek[narodowość="no2"]:after{
+	content: "Kraj pochodzenia : Norwegia";
+}
+
+skoczek[narodowość="no2"]:hover{
+	background-image: url(Norwegia.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #f0ab00;
+}
+
+skoczek[narodowość="no3"]:after{
+	content: "Kraj pochodzenia : Finlandia";
+}
+
+skoczek[narodowość="no3"]:hover{
+	background-image: url(Finlandia.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #000000;
+}
+
+skoczek[narodowość="no4"]:after{
+	content: "Kraj pochodzenia : Austria";
+}
+
+skoczek[narodowość="no4"]:hover{
+	background-image: url(Austria.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: black;
+}
+
+skoczek[narodowość="no5"]:after{
+	content: "Kraj pochodzenia : Japonia";
+}
+
+skoczek[narodowość="no5"]:hover{
+	background-image: url(Japonia.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: black;
+}
+
+skoczek[narodowość="no6"]:after{
+	content: "Kraj pochodzenia : Niemcy";
+}
+
+skoczek[narodowość="no6"]:hover{
+	background-image: url(Niemcy.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+
+skoczek[narodowość="no7"]:after{
+	content: "Kraj pochodzenia : Szwajcaria";
+}
+
+skoczek[narodowość="no7"]:hover{
+	background-image: url(Szwajcaria.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #000000;
+}
+
+skoczek[narodowość="no8"]:after{
+	content: "Kraj pochodzenia : Słowenia";
+}
+
+skoczek[narodowość="no8"]:hover{
+	background-image: url(Słowenia.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	color: #f0ab00;
+}
+
+autorzy:before{
+	content: "Autorzy: "
+}
+
+autorzy{
+	background-color: #f0ab00;
+    display: block;
+	position: absolute;
+	left: 0;
+    !bottom: 0;
+    width: 100%;
+	font-size: 20px;
+    text-align: center;
+    color: #002395;   
+}
+
+autor + autor:before{
+	content: "& ";
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT strona (skoczkowie, kraje_pochodzenia, autorzy)>
+<!ATTLIST strona tytuł CDATA #REQUIRED>
+<!ELEMENT skoczkowie (skoczek+)>
+<!ELEMENT kraje_pochodzenia (panstwo*)>
+<!ELEMENT panstwo (#PCDATA)>
+<!ATTLIST panstwo id ID #REQUIRED>
+<!ELEMENT autorzy (autor+)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT skoczek (imie, nazwisko, dataUrodzenia, miejsceUrodzenia, wzrost, waga, kariera)>
+<!ATTLIST skoczek narodowość IDREF #REQUIRED>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dataUrodzenia (#PCDATA)>
+<!ELEMENT miejsceUrodzenia (#PCDATA)>
+<!ELEMENT wzrost (#PCDATA)>
+<!ATTLIST wzrost jednostka CDATA #REQUIRED>
+<!ELEMENT waga (#PCDATA)>
+<!ATTLIST waga jednostka CDATA #REQUIRED>
+<!ELEMENT kariera (poczatek, koniec, rekord)>
+<!ELEMENT poczatek (#PCDATA)>
+<!ELEMENT koniec (#PCDATA)>
+<!ELEMENT rekord (#PCDATA)>
+<!ATTLIST rekord jednostka CDATA #REQUIRED>
