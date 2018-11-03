@@ -6,15 +6,29 @@
 
 <xsd:complexType name="stronaType">
 	<xsd:sequence>
-		<xsd:attribute name="tytuł" type="xsd:string"/>
 		<xsd:element name="skoczkowie" type="prz:skoczkowieType"/>
 		<xsd:element name="kraje_pochodzenia" type="prz:kraje_pochodzeniaType"/>
 		<xsd:element name="autorzy" type="prz:autorzyType"/>
 	</xsd:sequence>
+	<xsd:attribute name="tytuł" type="xsd:string"/>
+</xsd:complexType>
+
+<xsd:complexType name="skoczkowieType">
+	<xsd:sequence>
+		<xsd:element name="skoczek" type="prz:skoczekType" minOccurs="0"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+<xsd:complexType name="kraje_pochodzeniaType">
+		<xsd:element name="panstwo" type="xsd:string" minOccurs="0"/>
+</xsd:complexType> //------- ta czesc tez zle jest panie dzieju
+
+<xsd:complexType name="autorzyType">
+	<xsd:element name="autor" type="xsd:string" minOccurs="0"/>
 </xsd:complexType>
 
 
-
+<xsd:attribute name="id" type=ajdikurwa />
 <xsd:complexType name="skoczekType">
 	<xsd:sequence>
 		<xsd:element name="imie" type="xsd:string"/>
