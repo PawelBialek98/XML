@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+<xsd:element name="Skoczek">
+
+<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element name="imie" type="xsd:string"/>
+		<xsd:element name="nazwisko" type="xsd:string"/>
+		<xsd:element name="dataUrodzenia" type="xsd:string"/>
+		<xsd:element name="miejsceUrodzenia" type="xsd:string"/>
+		<xsd:element name="dataUrodzenia" type="xsd:string"/>
