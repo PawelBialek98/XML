@@ -13,7 +13,7 @@
 			<xsd:element name="wzrost" type="xsd:integer">
 				<xsd:attribute name="jednostka" type="xs:string" fixed="cm"/>
 			</xsd:element>
-			<xsd:element name="waga" type="xsd:integer">
+			<xsd:element name="waga" type="xsd:integer"> //tutaj chyba też trzeba bedzie zrobic wlasny typ : O bo nie moze byc integer jak mamy b.d.
 				<xsd:attribute name="jednostka" type="xs:string"/>
 			</xsd:element>
 			<xsd:element name="kariera" type="naszaprzestrzen:karieraType"/>
