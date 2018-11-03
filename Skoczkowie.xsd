@@ -2,21 +2,33 @@
 <xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
 
-<xsd:element name="Skoczek">
-	<xsd:complexType>
-		<xsd:sequence>
-			<xsd:element name="imie" type="xsd:string"/>
-			<xsd:element name="nazwisko" type="xsd:string"/>
-			<xsd:element name="dataUrodzenia" type="xsd:string"/>
-			<xsd:element name="miejsceUrodzenia" type="xsd:string"/>
-			<xsd:element name="dataUrodzenia" type="xsd:string"/>
-			<xsd:element name="wzrost" type="xsd:integer">
-				<xsd:attribute name="jednostka" type="xs:string" fixed="cm"/>
-			</xsd:element>
-			<xsd:element name="waga" type="xsd:integer"> //tutaj chyba też trzeba bedzie zrobic wlasny typ : O bo nie moze byc integer jak mamy b.d.
-				<xsd:attribute name="jednostka" type="xs:string"/>
-			</xsd:element>
-			<xsd:element name="kariera" type="naszaprzestrzen:karieraType"/>
-		</xsd:sequence>
-	</xsd:complexType>
-</xsd:element>
+<xsd:element name="strona" type="prz:stronaType"/>
+
+<xsd:complexType name="stronaType">
+	<xsd:sequence>
+		<xsd:attribute name="tytuł" type="xsd:string"/>
+		<xsd:element name="skoczkowie" type="prz:skoczkowieType"/>
+		<xsd:element name="kraje_pochodzenia" type="prz:kraje_pochodzeniaType"/>
+		<xsd:element name="autorzy" type="prz:autorzyType"/>
+	</xsd:sequence>
+</xsd:complexType>
+
+
+
+<xsd:complexType name="skoczekType">
+	<xsd:sequence>
+		<xsd:element name="imie" type="xsd:string"/>
+		<xsd:element name="nazwisko" type="xsd:string"/>
+		<xsd:element name="dataUrodzenia" type="xsd:string"/>
+		<xsd:element name="miejsceUrodzenia" type="xsd:string"/>
+		<xsd:element name="dataUrodzenia" type="xsd:string"/>			
+		<xsd:element name="wzrost" type="xsd:integer">
+		//odtąd zle jak chuj
+			<xsd:attribute name="jednostka" type="xs:string" fixed="cm"/>
+		</xsd:element>
+		<xsd:element name="waga" type="xsd:integer"> //tutaj chyba też trzeba bedzie zrobic wlasny typ : O bo nie moze byc integer jak mamy b.d.
+			<xsd:attribute name="jednostka" type="xs:string"/>
+		</xsd:element>
+		<xsd:element name="kariera" type="prz:karieraType"/>
+	</xsd:sequence>
+</xsd:complexType>
