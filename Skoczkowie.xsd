@@ -10,10 +10,13 @@
 			<xsd:element name="dataUrodzenia" type="xsd:string"/>
 			<xsd:element name="miejsceUrodzenia" type="xsd:string"/>
 			<xsd:element name="dataUrodzenia" type="xsd:string"/>
-			
-			
-			
-			
+			<xsd:element name="wzrost" type="xsd:integer">
+				<xsd:attribute name="jednostka" type="xs:string" fixed="cm"/>
+			</xsd:element>
+			<xsd:element name="waga" type="xsd:integer">
+				<xsd:attribute name="jednostka" type="xs:string"/>
+			</xsd:element>
+			<xsd:element name="kariera" type="naszaprzestrzen:karieraType"/>
 		</xsd:sequence>
 	</xsd:complexType>
 </xsd:element>
