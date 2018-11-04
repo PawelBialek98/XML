@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="style2.css"?>
-<?link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;subset=latin-ext" rel="stylesheet"?>
-<!DOCTYPE strona SYSTEM "Skoczkowie.dtd">
-<strona tytuł="Wybitni skoczkowie">
+<strona 
+	xmlns:prz="mojaprzestrzeńnazw"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="mojaprzestrzeńnazw Skoczkowie.xsd "
+	tytuł="Wybitni skoczkowie">
     <skoczkowie>
             <skoczek narodowość="no1" indeks="1">
                     <imie>Adam</imie>
