@@ -17,7 +17,7 @@
 </xsd:complexType>
 
 <xsd:complexType name="skoczkowieType">
-	<xsd:element name="skoczek" type="prz:skoczekType" minOccurs="0"/>
+	<xsd:element name="skoczek" type="prz:skoczekType" minOccurs="0" maxOccurus="unbounded"/>
 </xsd:complexType>
 
 <xsd:complexType name="kraje_pochodzeniaType">
@@ -29,7 +29,7 @@
 </xsd:complexType> 
 
 <xsd:complexType name="autorzyType">
-	<xsd:element name="autor" type="xsd:string" minOccurs="0"/>
+	<xsd:element name="autor" type="xsd:string" minOccurs="2" maxOccurus="2" />
 </xsd:complexType>
 
 <!---nie wiem jak sobie poradzić z tym rekordem wagą i wzrostem bo 
