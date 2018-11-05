@@ -23,7 +23,7 @@
 <xsd:complexType name="kraje_pochodzeniaType">
 	<xsd:simpleContent name="panstwo" minOccurs="0" maxOccurus="unbounded">
 		<xsd:extension base="xsd:string">
-			<xsd:attribute name="id" type=ajdikurwa use="required"/>
+			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 		</xsd:extension>
 	<xsd:simpleContent>
 </xsd:complexType> 
@@ -46,16 +46,16 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 		<xsd:element name="waga" type="prz:wagaType"/>
 		<xsd:element name="kariera" type="prz:karieraType"/>
 	</xsd:sequence>
-	<xsd:attribute name="id" type="xml:IDREF" use="required"/>
-	<xsd:attribute name="indeks" type="xml:ID" use="required"/>
+	<xsd:attribute name="id" type="xsd:IDREF" use="required"/>
+	<xsd:attribute name="indeks" type="xsd:ID" use="required"/>
 </xsd:complexType>
 
 <xsd:simpleType name="wzrostType">
-	<xsd:restriction base="xsd:intiger">
+	<xsd:restriction base="xsd:integer">
 		<xsd:minInclusive value="50" />
 		<xsd:maxInclusive value="250" />
 	</xsd:restriction>
-	<xsd:attribute name="jednostka" type=niewiem use="required"/>
+	<xsd:attribute name="jednostka" type="xsd:string" default="cm" use="required"/>
 </xsd:simpleType>
 
 <xsd:simpleType name="wagaType">
@@ -67,10 +67,10 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 			</xsd:restriction>
 		</xsd:simpleType>
 		<xsd:simpleType>
-			<xsd:restriction base="xsd:string">
+			<xsd:restriction base="xsd:string"/>
 		</xsd:simpleType>
-	<xsd:union> // Tu bez tego pierdolnika '/' ????!!!!
-	<xsd:attribute name="jednostka" type="xsd:string" default="kg" use="required" /> //I co tu z atrybutem? Czy go wymagamy?
+	</xsd:union> 
+	<xsd:attribute name="jednostka" type="xsd:string" default="kg" use="optional"/>
 </xsd:simpleType>
 
 <xsd:complexType name="karieraType">
@@ -90,9 +90,7 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 			</xsd:restriction>
 		</xsd:simpleType>
 		<xsd:simpleType>
-			<xsd:restriction base="xsd:string">
-			
-			</xsd:restriction>
+			<xsd:restriction base="xsd:string"/>
 		</xsd:simpleType>
 </xsd:simpleType>
 		
