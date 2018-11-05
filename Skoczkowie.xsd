@@ -5,32 +5,50 @@
 	elementFormDefault="qualified">
 
 
-<xsd:element name="strona" type="prz:stronaType"/>
-
-<xsd:complexType name="stronaType">
-	<xsd:sequence>
-		<xsd:element name="skoczkowie" type="prz:skoczkowieType"/>
-		<xsd:element name="kraje_pochodzenia" type="prz:kraje_pochodzeniaType"/>
-		<xsd:element name="autorzy" type="prz:autorzyType"/>
-	</xsd:sequence>
-	<xsd:attribute name="tytuł" type="xsd:string" use="required"/>
-</xsd:complexType>
+<xsd:element name="strona">
+	<xsd:complexType>
+		<xsd:sequence>
+			<xsd:element name="skoczkowie" type="prz:skoczkowieType" maxOccurs="unbounded"/>
+			<xsd:element name="kraje_pochodzenia" type="prz:kraje_pochodzeniaType" maxOccurs="unbounded"/>
+			<xsd:element name="autorzy" type="prz:autorzyType" minOccurs="2" maxOccurs="2"/>
+		</xsd:sequence>
+		<xsd:attribute name="tytuł" type="xsd:string" use="required"/>
+	</xsd:complexType>
+</xsd:element>
 
 <xsd:complexType name="skoczkowieType">
-	<xsd:element name="skoczek" type="prz:skoczekType"/>  <!---maxOccurus="unbounded" minOccurs="0"-->
+	<xsd:sequence>
+		<xsd:element name="skoczek" type="prz:skoczekType"/>  <!---maxOccurus="unbounded" minOccurs="0"-->
+	</xsd:sequence>
 </xsd:complexType>
 
 <xsd:complexType name="kraje_pochodzeniaType">
-	<xsd:element name="panstwo" type="prz:panstwoType"/>
+	<xsd:sequence>
+		<xsd:element name="panstwo" type="prz:panstwoType"/>
+	</xsd:sequence>
 </xsd:complexType>
 
-<xsd:simpleType name="panstwoType">
-	<xsd:restriction base="xsd:string"/>
-	<xsd:attribute name="id" type="xsd:ID"/> <!---use="required"-->
+
+<xsd:simpleType name="panstwoTypeRestriction">
+	<xsd:restriction base="xsd:string" />
 </xsd:simpleType>
 
+<xsd:complexType name="panstwoType">
+	<xsd:simpleContent>
+		<xsd:extension base="prz:panstwoTypeRestriction">
+			<xsd:attribute name="id" type="xsd:ID" default="m" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string" />
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:extension>
+	</xsd:simpleContent>
+</xsd:complexType>
+
 <xsd:complexType name="autorzyType">
-	<xsd:element name="autor" type="xsd:string"/> <!---minOccurs="2" maxOccurus="2" -->
+	<xsd:sequence>
+		<xsd:element name="autor" type="xsd:string"/> <!---minOccurs="2" maxOccurus="2" -->
+	</xsd:sequence>
 </xsd:complexType>
 
 <!---nie wiem jak sobie poradzić z tym rekordem wagą i wzrostem bo 
@@ -51,34 +69,46 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 	<xsd:attribute name="indeks" type="xsd:integer" use="required"/>
 </xsd:complexType>
 
-<xsd:simpleType name="wzrostType">
+<xsd:simpleType name="wzrostTypeRestriction">
 	<xsd:restriction base="xsd:integer">
 		<xsd:minInclusive value="50" />
 		<xsd:maxInclusive value="250" />
 	</xsd:restriction>
-	<xsd:attribute name="jednostka" type="xsd:string" default="cm"/> <!---use="required"-->
 </xsd:simpleType>
 
-<xsd:simpleType name="wagaType">
-	<xsd:union>
-		<xsd:simpleType>
-			<xsd:restriction base="xsd:integer">
-				<xsd:minInclusive value="30" />
-				<xsd:maxInclusive value="140" />
-			</xsd:restriction>
-		</xsd:simpleType>
-		<xsd:simpleType>
-			<xsd:restriction base="xsd:string" />
-		</xsd:simpleType>
-	</xsd:union> 
-	<xsd:attribute name="jednostka" type="xsd:string" default="kg"/> <!---use="optional" -->
+<xsd:complexType name="wzrostType">
+	<xsd:simpleContent>
+		<xsd:extension base="prz:wzrostTypeRestriction">
+			<xsd:attribute name="jednostka" type="xsd:string" default="cm" use="required">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:integer" />
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:extension>
+	</xsd:simpleContent>
+</xsd:complexType>
+
+<xsd:simpleType name="wagaTypeRestriction">
+	<xsd:restriction base="xsd:string" />
 </xsd:simpleType>
+
+<xsd:complexType name="wagaType">
+	<xsd:simpleContent>
+		<xsd:extension base="prz:wagaTypeRestriction">
+			<xsd:attribute name="jednostka" type="xsd:string" default="kg">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string" />
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:extension>
+	</xsd:simpleContent>
+</xsd:complexType>
 
 <xsd:complexType name="karieraType">
 	<xsd:sequence>
 		<xsd:element name="poczatek" type="xsd:integer"/>
 		<xsd:element name="koniec" type="prz:koniecType" />
-		<xsd:element name="rekord" type="prz:rekordType"/>
+		<xsd:element name="rekord" type="prz:rekordType" />
 	</xsd:sequence>
 </xsd:complexType>
 
@@ -96,10 +126,21 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 	</xsd:union>
 </xsd:simpleType>
 
-<xsd:simpleType name="rekordType">
+<xsd:simpleType name="rekordTypeRestriction">
 	<xsd:restriction base="xsd:decimal" />
-	<xsd:attribute name="jednostka" type="xsd:string" default="m"/> <!--use="required" -->
 </xsd:simpleType>
+
+<xsd:complexType name="rekordType">
+	<xsd:simpleContent>
+		<xsd:extension base="prz:rekordTypeRestriction">
+			<xsd:attribute name="jednostka" type="xsd:string" default="m">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:decimal" />
+				</xsd:simpleType>
+			</xsd:attribute>
+		</xsd:extension>
+	</xsd:simpleContent>
+</xsd:complexType>
 
 </xsd:schema>
 		
