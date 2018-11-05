@@ -19,7 +19,7 @@
 <xsd:complexType name="skoczkowieType">
 	<xsd:sequence>
 		<xsd:element name="skoczek" type="prz:skoczekType" minOccurs="0" maxOccurs="unbounded"/>
-	</xsd:sequence><!---maxOccurus="unbounded" minOccurs="0"-->
+	</xsd:sequence>
 </xsd:complexType>
 
 <xsd:complexType name="kraje_pochodzeniaType">
@@ -28,14 +28,9 @@
 	</xsd:sequence>
 </xsd:complexType>
 
-
-<xsd:simpleType name="panstwoTypeRestriction">
-	<xsd:restriction base="xsd:string" />
-</xsd:simpleType>
-
 <xsd:complexType name="panstwoType">
 	<xsd:simpleContent>
-		<xsd:extension base="prz:panstwoTypeRestriction">
+		<xsd:extension base="xsd:string">
 			<xsd:attribute name="id" type="xsd:ID" use="required"/>
 		</xsd:extension>
 	</xsd:simpleContent>
@@ -47,23 +42,26 @@
 	</xsd:sequence>
 </xsd:complexType>
 
-<!---nie wiem jak sobie poradzić z tym rekordem wagą i wzrostem bo 
-jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak sprobojesz sam
- to zakumasz o co mi chodzi-->
 
 <xsd:complexType name="skoczekType">
 	<xsd:sequence>
 		<xsd:element name="imie" type="xsd:string"/>
 		<xsd:element name="nazwisko" type="xsd:string"/>
-		<xsd:element name="dataUrodzenia" type="xsd:string"/>
+		<xsd:element name="dataUrodzenia" type="prz:dataUrodzeniaType"/>
 		<xsd:element name="miejsceUrodzenia" type="xsd:string"/>
 		<xsd:element name="wzrost" type="prz:wzrostType"/>	
 		<xsd:element name="waga" type="prz:wagaType"/>
 		<xsd:element name="kariera" type="prz:karieraType"/>
 	</xsd:sequence>
-	<xsd:attribute name="narodowość" type="xsd:string" use="required"/>
+	<xsd:attribute name="narodowość" type="xsd:IDREF" use="required"/>
 	<xsd:attribute name="indeks" type="xsd:integer" use="required"/>
 </xsd:complexType>
+
+<xsd:simpleType name="dataUrodzeniaType">
+	<xsd:restriction base="xsd:string">
+		<xsd:pattern value="([0-3][0-9]\.[0-1][0-9]\.[1-2][0-9]{3})"/>
+	</xsd:restriction>
+</xsd:simpleType>
 
 <xsd:simpleType name="wzrostTypeRestriction">
 	<xsd:restriction base="xsd:integer">
@@ -75,21 +73,15 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 <xsd:complexType name="wzrostType">
 	<xsd:simpleContent>
 		<xsd:extension base="prz:wzrostTypeRestriction">
-			<xsd:attribute name="jednostka" type="xsd:string" use="required">
-			</xsd:attribute>
+			<xsd:attribute name="jednostka" type="xsd:string" use="required" />
 		</xsd:extension>
 	</xsd:simpleContent>
 </xsd:complexType>
 
-<xsd:simpleType name="wagaTypeRestriction">
-	<xsd:restriction base="xsd:string" />
-</xsd:simpleType>
-
 <xsd:complexType name="wagaType">
 	<xsd:simpleContent>
-		<xsd:extension base="prz:wagaTypeRestriction">
-			<xsd:attribute name="jednostka" type="xsd:string" default="kg">
-			</xsd:attribute>
+		<xsd:extension base="xsd:string">
+			<xsd:attribute name="jednostka" type="xsd:string" use="required" />
 		</xsd:extension>
 	</xsd:simpleContent>
 </xsd:complexType>
@@ -116,13 +108,9 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 	</xsd:union>
 </xsd:simpleType>
 
-<xsd:simpleType name="rekordTypeRestriction">
-	<xsd:restriction base="xsd:decimal" />
-</xsd:simpleType>
-
 <xsd:complexType name="rekordType">
 	<xsd:simpleContent>
-		<xsd:extension base="prz:rekordTypeRestriction">
+		<xsd:extension base="xsd:decimal">
 			<xsd:attribute name="jednostka" type="xsd:string" default="m" />
 		</xsd:extension>
 	</xsd:simpleContent>
