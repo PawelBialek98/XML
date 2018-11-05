@@ -17,24 +17,25 @@
 </xsd:complexType>
 
 <xsd:complexType name="skoczkowieType">
-	<xsd:element name="skoczek" type="prz:skoczekType" minOccurs="0" maxOccurus="unbounded"/>
+	<xsd:element name="skoczek" type="prz:skoczekType"/>  <!---maxOccurus="unbounded" minOccurs="0"-->
 </xsd:complexType>
 
 <xsd:complexType name="kraje_pochodzeniaType">
-	<xsd:simpleContent name="panstwo" minOccurs="0" maxOccurus="unbounded">
-		<xsd:extension base="xsd:string">
-			<xsd:attribute name="id" type="xsd:ID" use="required"/>
-		</xsd:extension>
-	<xsd:simpleContent>
-</xsd:complexType> 
+	<xsd:element name="panstwo" type="prz:panstwoType"/>
+</xsd:complexType>
+
+<xsd:simpleType name="panstwoType">
+	<xsd:restriction base="xsd:string"/>
+	<xsd:attribute name="id" type="xsd:ID"/> <!---use="required"-->
+</xsd:simpleType>
 
 <xsd:complexType name="autorzyType">
-	<xsd:element name="autor" type="xsd:string" minOccurs="2" maxOccurus="2" />
+	<xsd:element name="autor" type="xsd:string"/> <!---minOccurs="2" maxOccurus="2" -->
 </xsd:complexType>
 
 <!---nie wiem jak sobie poradzić z tym rekordem wagą i wzrostem bo 
 jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak sprobojesz sam
- to zakumasz o co mi chodzi---->
+ to zakumasz o co mi chodzi-->
 
 <xsd:complexType name="skoczekType">
 	<xsd:sequence>
@@ -46,8 +47,8 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 		<xsd:element name="waga" type="prz:wagaType"/>
 		<xsd:element name="kariera" type="prz:karieraType"/>
 	</xsd:sequence>
-	<xsd:attribute name="id" type="xsd:IDREF" use="required"/>
-	<xsd:attribute name="indeks" type="xsd:ID" use="required"/>
+	<xsd:attribute name="narodowość" type="xsd:IDREF" use="required"/>
+	<xsd:attribute name="indeks" type="xsd:integer" use="required"/>
 </xsd:complexType>
 
 <xsd:simpleType name="wzrostType">
@@ -55,7 +56,7 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 		<xsd:minInclusive value="50" />
 		<xsd:maxInclusive value="250" />
 	</xsd:restriction>
-	<xsd:attribute name="jednostka" type="xsd:string" default="cm" use="required"/>
+	<xsd:attribute name="jednostka" type="xsd:string" default="cm"/> <!---use="required"-->
 </xsd:simpleType>
 
 <xsd:simpleType name="wagaType">
@@ -70,7 +71,7 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 			<xsd:restriction base="xsd:string" />
 		</xsd:simpleType>
 	</xsd:union> 
-	<xsd:attribute name="jednostka" type="xsd:string" default="kg" use="optional" />
+	<xsd:attribute name="jednostka" type="xsd:string" default="kg"/> <!---use="optional" -->
 </xsd:simpleType>
 
 <xsd:complexType name="karieraType">
@@ -92,10 +93,13 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 		<xsd:simpleType>
 			<xsd:restriction base="xsd:string" />
 		</xsd:simpleType>
+	</xsd:union>
 </xsd:simpleType>
 
 <xsd:simpleType name="rekordType">
-	<xsd:restriction type="xsd:decimal" />
-	<xsd:attribute name="jednostka" type="xsd:string" default="m" use="required" />
+	<xsd:restriction base="xsd:decimal" />
+	<xsd:attribute name="jednostka" type="xsd:string" default="m"/> <!--use="required" -->
 </xsd:simpleType>
+
+</xsd:schema>
 		
