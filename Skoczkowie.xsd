@@ -18,13 +18,13 @@
 
 <xsd:complexType name="skoczkowieType">
 	<xsd:sequence>
-		<xsd:element name="skoczek" type="prz:skoczekType"/>  <!---maxOccurus="unbounded" minOccurs="0"-->
-	</xsd:sequence>
+		<xsd:element name="skoczek" type="prz:skoczekType" minOccurs="0" maxOccurs="unbounded"/>
+	</xsd:sequence><!---maxOccurus="unbounded" minOccurs="0"-->
 </xsd:complexType>
 
 <xsd:complexType name="kraje_pochodzeniaType">
 	<xsd:sequence>
-		<xsd:element name="panstwo" type="prz:panstwoType"/>
+		<xsd:element name="panstwo" type="prz:panstwoType" minOccurs="0" maxOccurs="unbounded"/>
 	</xsd:sequence>
 </xsd:complexType>
 
@@ -47,7 +47,7 @@
 
 <xsd:complexType name="autorzyType">
 	<xsd:sequence>
-		<xsd:element name="autor" type="xsd:string"/> <!---minOccurs="2" maxOccurus="2" -->
+		<xsd:element name="autor" type="xsd:string" minOccurs="2" maxOccurs="2" />
 	</xsd:sequence>
 </xsd:complexType>
 
