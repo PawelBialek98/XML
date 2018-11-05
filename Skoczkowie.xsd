@@ -51,11 +51,11 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 </xsd:complexType>
 
 <xsd:simpleType name="wzrostType">
-	<xsd:restriction base="xsd:intiger">
+	<xsd:restriction base="xsd:integer">
 		<xsd:minInclusive value="50" />
 		<xsd:maxInclusive value="250" />
 	</xsd:restriction>
-	<xsd:attribute name="jednostka" type=niewiem use="required"/>
+	<xsd:attribute name="jednostka" type="xsd:string" default="cm" use="required"/>
 </xsd:simpleType>
 
 <xsd:simpleType name="wagaType">
@@ -67,10 +67,10 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 			</xsd:restriction>
 		</xsd:simpleType>
 		<xsd:simpleType>
-			<xsd:restriction base="xsd:string">
+			<xsd:restriction base="xsd:string" />
 		</xsd:simpleType>
-	<xsd:union> // Tu bez tego pierdolnika '/' ????!!!!
-	<xsd:attribute name="jednostka" type="xsd:string" default="kg" use="required" /> //I co tu z atrybutem? Czy go wymagamy?
+	</xsd:union> // Tu bez tego pierdolnika '/' ????!!!!
+	<xsd:attribute name="jednostka" type="xsd:string" default="kg" use="optional" /> //I co tu z atrybutem? Czy go wymagamy?
 </xsd:simpleType>
 
 <xsd:complexType name="karieraType">
@@ -90,9 +90,12 @@ jakbym napisał nowy typ to nazwa sie powtarza a to raczej coś nie halo jak spr
 			</xsd:restriction>
 		</xsd:simpleType>
 		<xsd:simpleType>
-			<xsd:restriction base="xsd:string">
-			
-			</xsd:restriction>
+			<xsd:restriction base="xsd:string" />
 		</xsd:simpleType>
+</xsd:simpleType>
+
+<xsd:simpleType name="rekordType">
+	<xsd:restriction type="xsd:decimal" />
+	<xsd:attribute name="jednostka" type="xsd:string" default="m" use="required" />
 </xsd:simpleType>
 		
