@@ -14,6 +14,14 @@
 		</xsd:sequence>
 		<xsd:attribute name="tytuł" type="xsd:string" use="required"/>
 	</xsd:complexType>
+	<xsd:keyref name="narodowość" refer="prz:id">
+		<xsd:selector xpath="strona/skoczkowie/skoczek"/>
+		<xsd:field xpath="@narodowość"/>
+	</xsd:keyref>
+	<xsd:key name="id">
+		<xsd:selector xpath="strona/kraje_pochodzenia/panstwo"/>
+		<xsd:field xpath="@id"/>
+	</xsd:key>
 </xsd:element>
 
 <xsd:complexType name="skoczkowieType">
@@ -31,7 +39,7 @@
 <xsd:complexType name="panstwoType">
 	<xsd:simpleContent>
 		<xsd:extension base="xsd:string">
-			<xsd:attribute name="id" type="xsd:ID" use="required"/>
+			<xsd:attribute name="id" type="xsd:string" use="required"/>
 		</xsd:extension>
 	</xsd:simpleContent>
 </xsd:complexType>
@@ -53,7 +61,7 @@
 		<xsd:element name="waga" type="prz:wagaType"/>
 		<xsd:element name="kariera" type="prz:karieraType"/>
 	</xsd:sequence>
-	<xsd:attribute name="narodowość" type="xsd:IDREF" use="required"/>
+	<xsd:attribute name="narodowość" type="xsd:string" use="required"/>
 	<xsd:attribute name="indeks" type="xsd:integer" use="required"/>
 </xsd:complexType>
 
