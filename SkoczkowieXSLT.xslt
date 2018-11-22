@@ -5,11 +5,8 @@
 
 <xsl:template match="/">
     <html>
-        <head>
-            <title>Skoczkowie</title>
-        </head>
         <body>
-            <h1>Skoczkowie</h1>
+            <h2>Skoczkowie</h2>
             <table border="1">
                 <tr bgcolor="#9acd32">
                     <th>Imie</th>
@@ -22,32 +19,35 @@
                     <th>Koniec</th>
                     <th>Rekord</th>
                 </tr>
-                <xsl:apply-templates/>
+                <xsl:for-each select="strona/skoczkowie/skoczek">
+                    <tr>
+                        <td><xsl:value-of select="imie"/></td>
+                        <td><xsl:value-of select="nazwisko"/></td>
+                        <td><xsl:value-of select="dataUrodzenia"/></td>
+                        <td><xsl:value-of select="miejsceUrodzenia"/></td>
+                        <td><xsl:value-of select="wzrost"/></td>
+                        <td><xsl:value-of select="waga"/></td>
+                        <xsl:for-each select="kariera">
+                            <tr>
+                                <td><xsl:value-of select="poczatek"/></td>
+                                <td><xsl:value-of select="koniec"/></td>
+                                <td><xsl:value-of select="rekord"/></td>
+                            </tr>
+                        </xsl:for-each>
+                    </tr>
+                </xsl:for-each>
             </table>
+            <tr>
+                <xsl:for-each select="strona/kraje_pochodzenia/panstwo">
+                    <td><xsl:value-of select="."/></td>
+                </xsl:for-each>
+            </tr>
+            <tr>
+                <xsl:for-each select="strona/autorzy/autor">
+                    <td><xsl:value-of select="."/></td>
+                </xsl:for-each>
+            </tr>
         </body>
     </html>
-</xsl:template>
-
-<xsl:template match="skoczkowie">
-    <xsl:for-each select="skoczek">
-        <tr>
-            <td><xsl:value-of select="imie"/></td>
-            <td><xsl:value-of select="nazwisko"/></td>
-            <td><xsl:value-of select="dataUrodzenia"/></td>
-            <td><xsl:value-of select="miejsceUrodzenia"/></td>
-            <td><xsl:value-of select="wzrost"/></td>
-            <td><xsl:value-of select="waga"/></td>
-            <xsl:for-each select="kariera">
-                <td><xsl:value-of select="poczatek"/></td>
-                <td><xsl:value-of select="koniec"/></td>
-                <td><xsl:value-of select="rekord"/></td>
-            </xsl:for-each>
-        </tr>
-    </xsl:for-each>
-</xsl:template>
-
-<xsl:template match="skoczek">
-
-
 </xsl:template>
 </xsl:stylesheet>
