@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<strona
-	xmlns="mojaprzestrzeńnazw"
+<?xml-stylesheet type="text/xsl" href="pomocniczyxml.xsl"?>
+<strona>
+	<!--xmlns="mojaprzestrzeńnazw"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="mojaprzestrzeńnazw Skoczkowie.xsd "
-	tytuł="Wybitni skoczkowie">
+	tytuł="Wybitni skoczkowie">-->
     <skoczkowie>
             <skoczek narodowość="no1" indeks="1">
                     <imie>Adam</imie>
