@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StronaRaport>
+   <Skoczek Urodzony="13.05.1993 w Schwarzach im Pongau" Narodowość="Austria"
+            Wzrost="166 cm"
+            Waga="56 kg"
+            Kariera="2012 - -"
+            Rekord="253.5">Stefan Kraft</Skoczek>
+   <Skoczek Urodzony="23.03.1990 w Lillehammer" Narodowość="Norwegia" Wzrost="182 cm"
+            Waga="b.d "
+            Kariera="2013 - -"
+            Rekord="252.0">Robert Johansson</Skoczek>
+   <Skoczek Urodzony="15.05.1987 w Zakopane" Narodowość="Polska" Wzrost="173 cm"
+            Waga="55 kg"
+            Kariera="2004 - -"
+            Rekord="251.5">Kamil Stoch</Skoczek>
+   <Skoczek Urodzony="20.09.1992 w Kranj" Wzrost="182 cm" Waga="62 kg" Kariera="2009 - -"
+            Rekord="250.0">Peter Prevc</Skoczek>
+   <Skoczek Urodzony="16.01.1987 w Cieszyn" Narodowość="Polska" Wzrost="176 cm"
+            Waga="59 kg"
+            Kariera="2006 - -"
+            Rekord="245.5">Piotr Żyła</Skoczek>
+   <Skoczek Urodzony="09.06.1991 w Limanowa" Narodowość="Polska" Wzrost="178 cm"
+            Waga="61 kg"
+            Kariera="2007 - -"
+            Rekord="244.5">Maciej Kot</Skoczek>
+   <Skoczek Urodzony="16.07.1981 w Lublana" Wzrost="174 cm" Waga="60 kg" Kariera="1998 - -"
+            Rekord="244.0">Robert Kranjec</Skoczek>
+   <Skoczek Urodzony="24.01.1994 w Narwik" Narodowość="Norwegia" Wzrost="182 cm"
+            Waga="b.d "
+            Kariera="2014 - -"
+            Rekord="243.5">Daniel-André Tande</Skoczek>
+   <Skoczek Urodzony="07.01.1990 w Rum" Narodowość="Austria" Wzrost="180 cm" Waga="54 kg"
+            Kariera="2006 - -"
+            Rekord="243.5">Gregor Schlierenzauer</Skoczek>
+   <Skoczek Urodzony="04.06.1999 w Kranj" Wzrost="174 cm" Waga="b.d kg" Kariera="2015 - -"
+            Rekord="243.5">Domen Prevc</Skoczek>
+   <Skoczek Urodzony="14.08.1991 w Erlabrunn" Narodowość="Niemcy" Wzrost="171 cm"
+            Waga="60 kg"
+            Kariera="2009 - -"
+            Rekord="243.0">Richard Freitag</Skoczek>
+   <Skoczek Urodzony="06.06.1972 w Shimokawa" Narodowość="Japonia" Wzrost="177 cm"
+            Waga="65 kg"
+            Kariera="1988 - -"
+            Rekord="241.5">Noriaki Kasai</Skoczek>
+   <Skoczek Urodzony="25.06.1981 w Grabs" Narodowość="Szwajcaria" Wzrost="170 cm"
+            Waga="50 kg"
+            Kariera="1997 - -"
+            Rekord="239.5">Simon Ammann</Skoczek>
+   <Skoczek Urodzony="14.07.1981 w Oulu" Narodowość="Finlandia" Wzrost="177 cm"
+            Waga="64 kg"
+            Kariera="1997 - 2012"
+            Rekord="235.5">Matti Hautamäki</Skoczek>
+   <Skoczek Urodzony="13.12.1977 w Lahti" Narodowość="Finlandia" Wzrost="184 cm"
+            Waga="66 kg"
+            Kariera="1992 - -"
+            Rekord="233.5">Janne Ahonen</Skoczek>
+   <Skoczek Urodzony="30.10.1986 w Spittal an der Drau" Narodowość="Austria"
+            Wzrost="180 cm"
+            Waga="65 kg"
+            Kariera="2006 - -"
+            Rekord="232.0">Thomas Morgenstern</Skoczek>
+   <Skoczek Urodzony="03.12.1977 w Wisła" Narodowość="Polska" Wzrost="170 cm" Waga="54 kg"
+            Kariera="1995 - 2011"
+            Rekord="230.5">Adam Małysz</Skoczek>
+   <Skoczek Urodzony="24.08.1982 w Steinkjer" Narodowość="Norwegia" Wzrost="184 cm"
+            Waga="60 kg"
+            Kariera="2001 - 2015"
+            Rekord="227.0">Anders Bardal</Skoczek>
+   <Skoczek Urodzony="29.01.1978 w Villingen-Schwenningen" Narodowość="Niemcy"
+            Wzrost="182 cm"
+            Waga="65 kg"
+            Kariera="1997 - 2014"
+            Rekord="224.0">Martin Schmitt</Skoczek>
+   <Skoczek Urodzony="09.11.1974 w Erlabrunn" Narodowość="Niemcy" Wzrost="184 cm"
+            Waga="64 kg"
+            Kariera="1992 - 2005"
+            Rekord="220.0">Sven Hannawald</Skoczek>
+   <Skoczek Urodzony="05.10.1974 w Zakopane" Narodowość="Polska" Wzrost="180 cm"
+            Waga="63 kg"
+            Kariera="1992 - 2007"
+            Rekord="205.5">Robert Mateja</Skoczek>
+   <Skoczek Urodzony="17.07.1963 w Jyväskylä" Narodowość="Finlandia" Wzrost="177 cm"
+            Waga="b.d "
+            Kariera="1981 - 1991"
+            Rekord="191.0">Matti Nykänen</Skoczek>
+   <Podsumowanie>
+      <Ilość_Skoczkow>22</Ilość_Skoczkow>
+      <Ilość_Polaków>5</Ilość_Polaków>
+      <Ilość_Norwegów>3</Ilość_Norwegów>
+      <Ilość_Finów>3</Ilość_Finów>
+      <Ilość_Austriaków>3</Ilość_Austriaków>
+      <Ilość_Japończyków>1</Ilość_Japończyków>
+      <Ilość_Niemców>3</Ilość_Niemców>
+      <Ilość_Szwajcarów>1</Ilość_Szwajcarów>
+      <Ilość_Słoweńców>3</Ilość_Słoweńców>
+      <Data_Wygenerowania_Raportu>25-11-2018</Data_Wygenerowania_Raportu>
+   </Podsumowanie>
+</StronaRaport>
