@@ -9,32 +9,62 @@
                     <xsl:element name="Ilość_Skoczkow">
                         <xsl:value-of select="count(strona/skoczkowie/skoczek)"/>
                     </xsl:element>
+                    <xsl:element name="Średni_Rekord">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek/kariera/rekord) div count(strona/skoczkowie/skoczek) * 100) div 100"/>
+                    </xsl:element>
                     <xsl:element name="Ilość_Polaków">
                         <xsl:value-of select="count(strona/skoczkowie/skoczek[@narodowość='no1'])"/>
+                    </xsl:element>
+                    <xsl:element name="Średni_Rekord_Polaków">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek[@narodowość='no1']/kariera/rekord) div count(strona/skoczkowie/skoczek[@narodowość='no1']) * 100) div 100"/>
                     </xsl:element>
                     <xsl:element name="Ilość_Norwegów">
                         <xsl:value-of select="count(strona/skoczkowie/skoczek[@narodowość='no2'])"/>
                     </xsl:element>
+                    <xsl:element name="Średni_Rekord_Norwegów">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek[@narodowość='no2']/kariera/rekord) div count(strona/skoczkowie/skoczek[@narodowość='no2']) * 100) div 100"/>
+                    </xsl:element>
                     <xsl:element name="Ilość_Finów">
                         <xsl:value-of select="count(strona/skoczkowie/skoczek[@narodowość='no3'])"/>
+                    </xsl:element>
+                    <xsl:element name="Średni_Rekord_Finów">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek[@narodowość='no3']/kariera/rekord) div count(strona/skoczkowie/skoczek[@narodowość='no3']) * 100) div 100"/>
                     </xsl:element>
                     <xsl:element name="Ilość_Austriaków">
                         <xsl:value-of select="count(strona/skoczkowie/skoczek[@narodowość='no4'])"/>
                     </xsl:element>
+                    <xsl:element name="Średni_Rekord_Austriaków">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek[@narodowość='no4']/kariera/rekord) div count(strona/skoczkowie/skoczek[@narodowość='no4']) * 100) div 100"/>
+                    </xsl:element>
                     <xsl:element name="Ilość_Japończyków">
                         <xsl:value-of select="count(strona/skoczkowie/skoczek[@narodowość='no5'])"/>
+                    </xsl:element>
+                    <xsl:element name="Średni_Rekord_Japończyków">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek[@narodowość='no5']/kariera/rekord) div count(strona/skoczkowie/skoczek[@narodowość='no5']) * 100) div 100"/>
                     </xsl:element>
                     <xsl:element name="Ilość_Niemców">
                         <xsl:value-of select="count(strona/skoczkowie/skoczek[@narodowość='no6'])"/>
                     </xsl:element>
+                    <xsl:element name="Średni_Rekord_Niemców">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek[@narodowość='no6']/kariera/rekord) div count(strona/skoczkowie/skoczek[@narodowość='no6']) * 100) div 100"/>
+                    </xsl:element>
                     <xsl:element name="Ilość_Szwajcarów">
                         <xsl:value-of select="count(strona/skoczkowie/skoczek[@narodowość='no7'])"/>
+                    </xsl:element>
+                    <xsl:element name="Średni_Rekord_Szwajcarów">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek[@narodowość='no7']/kariera/rekord) div count(strona/skoczkowie/skoczek[@narodowość='no7']) * 100) div 100"/>
                     </xsl:element>
                     <xsl:element name="Ilość_Słoweńców">
                         <xsl:value-of select="count(strona/skoczkowie/skoczek[@narodowość='no8'])"/>
                     </xsl:element>
+                    <xsl:element name="Średni_Rekord_Słoweńców">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek[@narodowość='no8']/kariera/rekord) div count(strona/skoczkowie/skoczek[@narodowość='no8']) * 100) div 100"/>
+                    </xsl:element>
                     <xsl:element name="Data_Wygenerowania_Raportu">
                         <xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" />
+                    </xsl:element>
+                    <xsl:element name="Średni_Wzrost">
+                        <xsl:value-of select="round(sum(strona/skoczkowie/skoczek/wzrost) div count(strona/skoczkowie/skoczek) * 100) div 100"/>
                     </xsl:element>
                 </xsl:element>
 
@@ -69,7 +99,7 @@
                     <xsl:when test="string(@narodowość) = 'no7'">
                         <xsl:attribute name="Narodowość">Szwajcaria</xsl:attribute>
                     </xsl:when>
-                    <xsl:when test="string(@narodowość) = 'no2'">
+                    <xsl:when test="string(@narodowość) = 'no8'">
                         <xsl:attribute name="Narodowość">Słowenia</xsl:attribute>
                     </xsl:when>
                 </xsl:choose>
