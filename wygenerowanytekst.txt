@@ -1,0 +1,40 @@
+
+| IMIE I NAZWISKO       | URODZONY                           | NARODOWOŚĆ   | WZROST | WAGA   | KARIERA     | REKORD|
+        
+| Stefan Kraft          | 13.05.1993 w Schwarzach im Pongau  | Austria      | 166 cm | 56 kg  | 2012 - -    | 253.5 |
+| Robert Johansson      | 23.03.1990 w Lillehammer           | Norwegia     | 182 cm | b.d    | 2013 - -    | 252.0 |
+| Kamil Stoch           | 15.05.1987 w Zakopane              | Polska       | 173 cm | 55 kg  | 2004 - -    | 251.5 |
+| Peter Prevc           | 20.09.1992 w Kranj                 | Słowenia     | 182 cm | 62 kg  | 2009 - -    | 250.0 |
+| Piotr Żyła            | 16.01.1987 w Cieszyn               | Polska       | 176 cm | 59 kg  | 2006 - -    | 245.5 |
+| Maciej Kot            | 09.06.1991 w Limanowa              | Polska       | 178 cm | 61 kg  | 2007 - -    | 244.5 |
+| Robert Kranjec        | 16.07.1981 w Lublana               | Słowenia     | 174 cm | 60 kg  | 1998 - -    | 244.0 |
+| Daniel-André Tande    | 24.01.1994 w Narwik                | Norwegia     | 182 cm | b.d    | 2014 - -    | 243.5 |
+| Gregor Schlierenzauer | 07.01.1990 w Rum                   | Austria      | 180 cm | 54 kg  | 2006 - -    | 243.5 |
+| Domen Prevc           | 04.06.1999 w Kranj                 | Słowenia     | 174 cm | b.d kg | 2015 - -    | 243.5 |
+| Richard Freitag       | 14.08.1991 w Erlabrunn             | Niemcy       | 171 cm | 60 kg  | 2009 - -    | 243.0 |
+| Noriaki Kasai         | 06.06.1972 w Shimokawa             | Japonia      | 177 cm | 65 kg  | 1988 - -    | 241.5 |
+| Simon Ammann          | 25.06.1981 w Grabs                 | Szwajcaria   | 170 cm | 50 kg  | 1997 - -    | 239.5 |
+| Matti Hautamäki       | 14.07.1981 w Oulu                  | Finlandia    | 177 cm | 64 kg  | 1997 - 2012 | 235.5 |
+| Janne Ahonen          | 13.12.1977 w Lahti                 | Finlandia    | 184 cm | 66 kg  | 1992 - -    | 233.5 |
+| Thomas Morgenstern    | 30.10.1986 w Spittal an der Drau   | Austria      | 180 cm | 65 kg  | 2006 - -    | 232.0 |
+| Adam Małysz           | 03.12.1977 w Wisła                 | Polska       | 170 cm | 54 kg  | 1995 - 2011 | 230.5 |
+| Anders Bardal         | 24.08.1982 w Steinkjer             | Norwegia     | 184 cm | 60 kg  | 2001 - 2015 | 227.0 |
+| Martin Schmitt        | 29.01.1978 w Villingen-Schwenningen| Niemcy       | 182 cm | 65 kg  | 1997 - 2014 | 224.0 |
+| Sven Hannawald        | 09.11.1974 w Erlabrunn             | Niemcy       | 184 cm | 64 kg  | 1992 - 2005 | 220.0 |
+| Robert Mateja         | 05.10.1974 w Zakopane              | Polska       | 180 cm | 63 kg  | 1992 - 2007 | 205.5 |
+| Matti Nykänen         | 17.07.1963 w Jyväskylä             | Finlandia    | 177 cm | b.d    | 1981 - 1991 | 191.0 |
+
+
+| KRAJE      | ILOŚC SKOCZKÓW | ŚREDNI REKORD |
+        | ŚWIAT      | 22             | 236.11        |
+| POLSKA     | 5              | 235.5         |
+| NORWEGIA   | 3              | 240.83        |
+| FINLANDIA  | 3              | 220           |
+| AUSTRIA    | 3              | 243           |
+| JAPONIA    | 1              | 241.5         |
+| NIEMCY     | 3              | 229           |
+| SZWAJCARIA | 1              | 239.5         |
+| SŁOWENIA   | 3              | 245.83        |
+
+DATA WYGENEROWANIA RAPORTU: 27-11-2018
+ŚREDNI WZROST SKOCZKÓW: 177.41
