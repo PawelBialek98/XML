@@ -22,8 +22,7 @@
 					<fo:block display-align="right"><fo:page-number/></fo:block>
 				</fo:static-content>
                 <fo:flow flow-name="xsl-region-body">
-                <xsl:for-each select="/StronaRaport/Skoczek">
-                        <fo:table border="solid 2pt blue"  background-color="orange" display-align="left">
+                    <fo:table border="solid 3pt blue" background-color="orange" display-align="left">
 							<fo:table-header>
 								<fo:table-row>
 									<fo:table-cell>
@@ -49,33 +48,34 @@
 									</fo:table-cell>
 								</fo:table-row>
 							</fo:table-header>
-							<fo:table-body>
-							<fo:table-row>
-								<fo:table-cell display-align="left">
-									<fo:block><xsl:value-of select="."/></fo:block>
-								</fo:table-cell>
-								<fo:table-cell display-align="left" margin-right="15mm">
-									<fo:block><xsl:value-of select="@Narodowość"/></fo:block>
-								</fo:table-cell>
-								<fo:table-cell display-align="left">
-									<fo:block><xsl:value-of select="@Urodzony"/></fo:block>
-								</fo:table-cell>
-								<fo:table-cell display-align="left" margin-left="2mm">
-									<fo:block><xsl:value-of select="@Wzrost"/></fo:block>
-								</fo:table-cell>
-								<fo:table-cell display-align="left">
-									<fo:block><xsl:value-of select="@Waga"/></fo:block>
-								</fo:table-cell>
-								<fo:table-cell display-align="left">
-									<fo:block><xsl:value-of select="@Kariera"/></fo:block>
-								</fo:table-cell>
-								<fo:table-cell display-align="left">
-									<fo:block><xsl:value-of select="@Rekord"/></fo:block>
-								</fo:table-cell>
-							</fo:table-row>
+						<fo:table-body>
+								<xsl:for-each select="/StronaRaport/Skoczek">
+								<fo:table-row border="solid 2pt blue">
+									<fo:table-cell display-align="left" margin-right="15mm">
+										<fo:block><xsl:value-of select="."/></fo:block>
+									</fo:table-cell>
+									<fo:table-cell display-align="left" margin-right="15mm">
+										<fo:block><xsl:value-of select="@Narodowość"/></fo:block>
+									</fo:table-cell>
+									<fo:table-cell display-align="left">
+										<fo:block><xsl:value-of select="@Urodzony"/></fo:block>
+									</fo:table-cell>
+									<fo:table-cell display-align="left" margin-left="2mm">
+										<fo:block><xsl:value-of select="@Wzrost"/></fo:block>
+									</fo:table-cell>
+									<fo:table-cell display-align="left">
+										<fo:block><xsl:value-of select="@Waga"/></fo:block>
+									</fo:table-cell>
+									<fo:table-cell display-align="left">
+										<fo:block><xsl:value-of select="@Kariera"/></fo:block>
+									</fo:table-cell>
+									<fo:table-cell display-align="left">
+										<fo:block><xsl:value-of select="@Rekord"/></fo:block>
+									</fo:table-cell>
+								</fo:table-row>
+							</xsl:for-each>
 						</fo:table-body>
-                        </fo:table>
-                    </xsl:for-each>
+                    </fo:table>
                 </fo:flow>
             </fo:page-sequence>
 			
